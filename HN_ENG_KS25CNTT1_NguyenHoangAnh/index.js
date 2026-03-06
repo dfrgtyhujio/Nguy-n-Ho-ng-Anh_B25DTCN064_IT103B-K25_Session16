@@ -6,8 +6,7 @@ function register() {
     let rePasswordInput = document.getElementById("rePassword");
     
     for (let index = 0; index < users.length; index++) {
-        const element = users[index];
-        if (element.email === emailInput.value) {
+        if (users[index].email === emailInput.value) {
             alert("Email đã được sử dụng.");
             return;
         }
